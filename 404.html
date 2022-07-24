@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html oncontextmenu=self.event.returnValue=false onselectstart="return false">
+
+<head oncontextmenu=self.event.returnValue=false onselectstart="return false">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="source/js/header.js"></script>
+
+    <title>404-STOP</title>
+</head>
+
+<body>
+    <noscript> <iframe src="*.htm"></iframe> </noscript>
+    <SCRIPT language=JavaScript>
+        document.oncontextmenu = nocontextmenu;
+        document.onmousedown = norightclick;
+        document.ondragstart = noDragstart;
+        document.onselectstart = noSelect;
+        document.onselect = document.selection.empty();
+        document.onkeydown = keyDown;
+    </SCRIPT>
+    <div class="change" id="index_card">
+        <center><br>
+            <b style="font-size:500%;">404</b><br>
+            <b>页面未找到</b><br>
+            <br>
+        </center>
+
+    </div>
+    <script>
+        function myFunction() {
+            alert("页面未找到");
+        }
+        document.oncontextmenu = function (evt) {
+            evt.preventDefault();
+        }
+
+        document.onselectstart = function (evt) {
+            evt.preventDefault();
+        }; 
+    </script>
+    <footer id="footer">
+        <center>
+            <a href="https://github.com/ye-tutu/TuHome" target="_blank">>© 2021-2022 TuHome</a>
+        </center>
+    </footer>
+
+</body>
+
+</html>
